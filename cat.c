@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int power(int a, int base) {
+	int p=1;
+	for(int i = 0; i<a; i++) 
+		p*=base;
+	return p;
+}
+
 void copy( FILE *in, FILE *out) {
 	int c;
 	while((c = getc(in))!=EOF) 
