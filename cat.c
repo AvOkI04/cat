@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// this func need for input and output symbols
 void copy( FILE *in, FILE *out) {
 	int c;
 	while((c = getc(in))!=EOF) 
